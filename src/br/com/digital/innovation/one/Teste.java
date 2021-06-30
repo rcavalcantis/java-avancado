@@ -10,7 +10,7 @@ public class Teste {
 
     public static void main(String[] args) throws IOException {
         Socket echoSocket = new Socket("localhost", 10000);
-
+        System.out.println("teste");
         PrintWriter out = new PrintWriter(echoSocket.getOutputStream(), true);
         BufferedReader in = new BufferedReader(new InputStreamReader(echoSocket.getInputStream()));
         out.println(" <isomsg>\n" +
